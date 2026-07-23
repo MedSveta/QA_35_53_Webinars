@@ -99,6 +99,7 @@ finally:
 inputs = ["12", "ноль", "0", "8"]
 for value in inputs:
     try:
-        print("100/", value, " = ", 100 / int(value))
+        result = 100 / int(value)
+        print(f"100 /{value} = {result:.2f}")
     except (IndexError, ValueError, ZeroDivisionError) as e:
         print(e)
